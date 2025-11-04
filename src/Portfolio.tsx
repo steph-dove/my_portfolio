@@ -8,7 +8,7 @@ const RESUME_URL = `${import.meta.env.BASE_URL}Stephanie Dover Resume.pdf`;
 const PHOTO_URL = `${import.meta.env.BASE_URL}images/me.png`;
 
 const COMPANIES = [
-  { name: "Rad AI", url: "https://www.rad.ai", logoUrl: "", tagline: "Healthcare AI / Radiology" },
+  { name: "Rad AI", url: "https://www.radai.com", logoUrl: "", tagline: "Healthcare AI / Radiology" },
   { name: "Twitch", url: "https://www.twitch.tv", logoUrl: "", tagline: "Live Video / Commerce" },
   { name: "Amazon", url: "https://www.amazon.com", logoUrl: "", tagline: "AWS / Retail" },
   { name: "GitHub", url: "https://github.com", logoUrl: "", tagline: "Developer Platform / Authentication" },

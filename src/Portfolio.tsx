@@ -4,8 +4,8 @@ const NAME = "Stephanie Dover";
 const TAGLINE = "Senior/Staff Software Engineer — Platform, Infrastructure, and AI Systems";
 const LOCATION = "Seattle, WA";
 const EMAIL = "doverstephaniem@gmail.com";
-const RESUME_URL = "/Stephanie Dover Resume.pdf";
-const PHOTO_URL = "/images/me.png";
+const RESUME_URL = `${import.meta.env.BASE_URL}Stephanie Dover Resume.pdf`;
+const PHOTO_URL = `${import.meta.env.BASE_URL}images/me.png`;
 
 const COMPANIES = [
   { name: "Rad AI", url: "https://www.rad.ai", logoUrl: "", tagline: "Healthcare AI / Radiology" },

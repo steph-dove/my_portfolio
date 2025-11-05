@@ -4,6 +4,7 @@ const NAME = "Stephanie Dover";
 const TAGLINE = "Senior/Staff Software Engineer — Platform, Infrastructure, and AI Systems";
 const LOCATION = "Seattle, WA";
 const EMAIL = "doverstephaniem@gmail.com";
+const CALENDLY_URL = "https://calendly.com/doverstephaniem/30min";
 const RESUME_URL = `${import.meta.env.BASE_URL}Stephanie Dover Resume.pdf`;
 const PHOTO_URL = `${import.meta.env.BASE_URL}images/me.png`;
 
@@ -65,6 +66,7 @@ function Nav() {
             <a className="opacity-90 hover:opacity-100" href="#deep-dives">Deep Dives</a>
             <a className="opacity-90 hover:opacity-100" href={RESUME_URL} target="_blank" rel="noopener noreferrer">Resume</a>
             <a className="opacity-90 hover:opacity-100" href="#contact">Contact</a>
+            <a className="opacity-90 hover:opacity-100" href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">Schedule</a>
           </nav>
         </div>
       </div>
@@ -81,7 +83,8 @@ function Hero() {
           <p className="mt-2 text-neutral-300">{TAGLINE}</p>
           <p className="mt-2 text-neutral-400">{LOCATION}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href={`mailto:${EMAIL}`} className="rounded-2xl bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/15">Email</a>
+            <a href={CALENDLY_URL} className="rounded-2xl bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/15" target="_blank" rel="noopener noreferrer">Schedule Meeting</a>
+            <a href={`mailto:${EMAIL}`} className="rounded-2xl border border-white/15 px-4 py-2 text-sm hover:bg-white/5">Email</a>
             <a href={RESUME_URL} className="rounded-2xl border border-white/15 px-4 py-2 text-sm hover:bg-white/5" target="_blank" rel="noopener noreferrer">View Resume</a>
             <a href="#deep-dives" className="rounded-2xl border border-white/15 px-4 py-2 text-sm hover:bg-white/5">Technical Deep Dives</a>
           </div>
@@ -156,9 +159,22 @@ function CTA() {
         <p className="mt-2 text-neutral-300">
           Open to senior and staff-level engineering roles focused on large-scale systems and infrastructure reliability. Also available for consulting engagements through Dovatech, LLC related to distributed systems and backend architecture.
         </p>
-        <p className="mt-5 text-neutral-200">
-          Contact: <a href={`mailto:${EMAIL}`} className="text-white hover:underline">{EMAIL}</a>
-        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a 
+            href={CALENDLY_URL} 
+            className="rounded-2xl bg-white/10 px-5 py-2.5 text-sm font-medium hover:bg-white/15 transition-colors" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Schedule a 30-Minute Meeting
+          </a>
+          <a 
+            href={`mailto:${EMAIL}`} 
+            className="rounded-2xl border border-white/15 px-5 py-2.5 text-sm hover:bg-white/5 transition-colors"
+          >
+            Email Me
+          </a>
+        </div>
       </div>
     </section>
   );
